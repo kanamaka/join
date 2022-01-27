@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  margin: 10px;
+}
+
+.right {
+  float: right;
+  list-style: none;
+}
+
+.main {
+  background-color: #ffefa5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+
+#slider {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#slider li {
+  display: inline-box;
+  float: left;
+  width: 300px;
+  margin: 5px;
+}
+#slider li img {
+  width: 300px;
+}

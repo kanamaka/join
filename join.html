@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="join.css" />
-    <title>Casteria</title>
-  </head>
-  <body>
-    <div class="header">
-    <ul>
-      <li class="right">
-        <form action="cgi-bin/example.cgi" method="post">
-        <input type="search" name="search" placeholder="Search">
-        <input type="submit" name="submit" value="Search">
-        </form>
-      </li>
-      <li class="right">お問い合わせ</li>
-      <li class="right">Drink</li>
-      <li class="right">Food</li>
-      <li class="right">Home</li>
-      <li class="left">
-        <h2>Casteria</h2>
-      </li>
-
-    </ul>
-    </div>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Casteria</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="/slick/slick.css">
+<link rel="stylesheet" href="/slick/slick-theme.css">
+<link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+<div class="header">
+  <ul>
+    <li class="right">
+      <form action="cgi-bin/example.cgi" method="post">
+      <input type="search" name="search" placeholder="Search">
+      <input type="submit" name="submit" value="Search">
+      </form>
+    </li>
+    <li class="right">お問い合わせ</li>
+    <li class="right">Drink</li>
+    <li class="right">Food</li>
+    <li class="right">Home</li>
+    <li class="left"><h1>Casteria</h1></li>
+  </ul>
+</div>
+<ul class="slider">
+  <li><img src="img/food.jpg" class="slider"></li>
+  <li><img src="img/food2.jpg" class="slider"></li>
+  <li><img src="img/food3.jpg" class="slider"></li>
+  <li><img src="img/food4.jpg" class="slider"></li>
+</ul>
+<div class="main">
+  <p>新型コロナウイルスに対する取り組みの最新情報をご案内</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/slick/slick.min.js"></script>
+<script src="js/join.js"></script>
+</body>
 </html>
