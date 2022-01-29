@@ -9,83 +9,127 @@
     <link rel="stylesheet" href="css/join.css">
     <title>Casteria</title>
   </head>
-    <div class="header">
-      <nav class="navbar navbar-expand ">
-        <div class="container">
-          <li class="left"><h1>Casteria</h1></li>
-          <li class="right">Home</li>
-          <li class="right">Food</li>
-          <li class="right">Drink</li>
-          <li class="right">お問い合わせ</li>
-          <li class="right">
-            <form action="cgi-bin/example.cgi" method="post">
-            <input type="search" name="search" placeholder="Search">
-            <input type="submit" name="submit" value="Search">
-            </form>
-          </li>
-        </div>
-      </nav>
-    </div>
-    <div id="slider">
-      <ul class="slider">
-       <li class="slider img-fluid"><img src="img/food.jpg" class="img-fluid rounded float-left"></li>
-       <li class="slider img-fluid"><img src="img/food2.jpg" class="img-fluid rounded float-right"></li>
-       <li class="slider img-fluid"><img src="img/food3.jpg" class="img-fluid"></li>
-       <li class="slider img-fluid"><img src="img/food4.jpg" class="img-fluid"></li>
-      </ul>
-     </div>
-     <body>
-      <div class="container-fluid">
-       <div class="row">
-        <div class="col-lg-12">
-         <h2 class="main">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
-        </div>
-       <div class="col-lg-12">
-         <div class="accordion w-75 d-flex align-items-center">
-          <h2 class="menu js-menu ">■衛生面に関して</h2>
-           <div>
-            <p>マスクを着用しての接客</p>
-            <p>出勤前の検温の実施</p>
-            <p>レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</p>
-            <p>より頻度の高い手洗いの施工</p>
-            <p>テーブルにお客様用の消毒用アルコールの設置</p>
-            <p>従業員間の距離確保のため、休憩や研修時の客席利用</p>
-           </div>
-          <h2 class="menu js-menu">■お客様へ協力のお願い</h2>
-           <div>
-            <p>店内では、飲食時以外のマスクの着用をお願いいたします</p>
-            <p>入店時の手指の消毒にご協力ください</p>
-            <p>レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</p>
-            <p>多数でお越しの際はお一人様がまとめてご注文願います</p>
-            <p>発熱や体調不良の際はご入店をお控えください</p>
-           </div>
-          <h2 class="menu js-menu">■サービスに関して</h2>
-           <div>
-            <p>直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
-            <p>ドリンクやフードのサンプリング中止</p>
-            <p>地域活動、イベントの中止</p>
-            <p>混雑時間帯の客席譲り合いのご協力お願いの実施</p>
-            <p>店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
-            <p>混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgrey;">
+      <div><h1>Casteria</h1></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li><p class="nav-link">Home</p></li>
+          <li><p class="nav-link">Food</p></li>
+          <li><p class="nav-link">Drink</p></li>
+          <li><p class="nav-link">お問合わせ</p></li>
+        </ul>
+         <form class="navbar-form navbar-left">
+          <div class="form-group">
+           <input type="text" class="form-control" placeholder="Search">
           </div>
-        </div>
-        </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+         </form>    
+      </div>
+    </nav>
+  </header>
+  <div>
+    <div class="slider">
+     <div><img src="img/food.jpg" class="img-fluid img-responsive"></div>
+     <div><img src="img/food2.jpg" class="img-fluid img-responsive"></div>
+     <div><img src="img/food3.jpg" class="img-fluid img-responsive"></div>
+     <div><img src="img/food4.jpg" class="img-fluid img-responsive"></div>
+    </div>
+  </div>
+  <body style="background-color:#FFEFB5;">
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-12 col-sm-6 col-lg-8">
+      <h2 class="main text-center">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
+     </div>
+   <div class="col-lg-12 col-sm-6 col-lg-8">
+    <div class="accordion w-75 mx-auto">
+     <h2 class="menu js-menu " style="background-color:#FFC7AF;">■衛生面に関して</h2>
+      <div class="collapse">
+       <p>・マスクを着用しての接客</p>
+       <p>・出勤前の検温の実施</p>
+       <p>・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</p>
+       <p>・より頻度の高い手洗いの施工</p>
+       <p>・テーブルにお客様用の消毒用アルコールの設置</p>
+       <p>・従業員間の距離確保のため、休憩や研修時の客席利用</p>
+      </div>
+       <h2 class="menu js-menu" style="background-color:#FFC7AF;">■お客様へ協力のお願い</h2>
+      <div class="collapse">
+       <p>・店内では、飲食時以外のマスクの着用をお願いいたします</p>
+       <p>・入店時の手指の消毒にご協力ください</p>
+       <p>・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</p>
+       <p>・多数でお越しの際はお一人様がまとめてご注文願います</p>
+       <p>・発熱や体調不良の際はご入店をお控えください</p>
+      </div>
+       <h2 class="menu js-menu" style="background-color:#FFC7AF;">■サービスに関して</h2>
+      <div class="collapse">
+       <p>・直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
+       <p>・ドリンクやフードのサンプリング中止</p>
+       <p>・地域活動、イベントの中止</p>
+       <p>・混雑時間帯の客席譲り合いのご協力お願いの実施</p>
+       <p>・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
+       <p>・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
+      </div>
+      <div class="fadein mt-5 col-sm-6 col-lg-8">
+       <div><h2>Signature Food</h2></div>
+       <div><img src="img/food.jpg" class="img-responsive img-container" height="300" width="500"></div>
+       <div>サーモンは刺身やカルパッチョで食べるのが美味しいですが、<br>
+            リッチな気分になれるサーモンステーキがおすすめです。サーモンのおいしさを引き立てる2種のソースも絶品です！
        </div>
       </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/slick/slick.min.js"></script>
-    <script src="js/join.js"></script>
-  </body>
-  
-  <!-- <footer class="footer text-center d-flex flex-row bd-highlight mb-3">
-    <div class="container-footer">
-      プライバシーポリシー
-      お問い合わせ
-      運営会社
+      <div class="fadein col-sm-6 col-lg-8">
+        <div><h2>Our coffee</h2></div>
+        <div><img src="img/barista.jpg" class="img-responsive" height="300" width="500"></div>
+        <div class="img-container">当店のコーヒー豆が厳選して世界中から買い付けています。そしてそのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています
+        </div>
+      </div>
+      <div class="fadein col-sm-6 col-lg-8">
+        <div><h2>Our Food</h2></div>
+        <div><img src="img/food3.jpg" class="img-responsive img-container" height="300" width="500"></div>
+        <div>当店は何より衛生管理に気を付けています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。
+        </div>
+       </div>
+       <!-- <div class="fadein card">
+        <img src="img/barista.jpg" class="card-img-top img-responsive" >
+        <div class="card-body">
+          <p class="card-text">
+            <h2>Address</h2>
+            <p>681 xxxx Drive, xxxxx xxxx #01 - 06 000000</p>
+            <p>Opening House</p>
+            <h2>Mondays - Friday: 10am - 9pm</h2>
+            <p>saturdays, sundays & Public Holidays: 9am- 9pm</p>
+          </p>
+        </div>
+       </div> -->
+      <div>
+        <p class="text-center">店舗一覧</p>
+        <ul class="restaurant">
+          <li class="restaurant"><img src="img/restaurant.jpg" class="rounded-circle" width="150" height="150"></li>
+          <li class="restaurant"><img src="img/restaurant2.jpg" class="rounded-circle" width="150" height="150"></li>
+          <li class="restaurant"><img src="img/restaurant3.jpg" class="rounded-circle" width="150" height="150"></li>
+          <li class="restaurant"><img src="img/restaurant4.jpg" class="rounded-circle" width="150" height="150"></li>
+          <li class="restaurant"><img src="img/restaurant5.jpg" class="rounded-circle" width="150" height="150"></li>
+        </ul>
+      </div>
+     </div>
     </div>
-  </footer> -->
+   </div>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="/slick/slick.min.js"></script>
+   <script src="js/join.js"></script>
+  </body>
+  <footer style="background-color: darkgray;" class="p-5">
+    <div class="container-fluid text-center ">
+      <span class="m-2">プライバシーポリシー</span>
+      <span class="m-2">お問い合わせ</span>
+      <span class="m-2">運営会社</span>
+    </div>
+  </footer>
 </html>
