@@ -14,7 +14,7 @@ $('.slider').slick({
 	arrows: true,
 	infinite: true,
 	responsive: [{
-		breakpoint: 900,
+		breakpoint: 768,
 		settings: {
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -23,28 +23,18 @@ $('.slider').slick({
 });
 
 
+
+
 $('.js-menu').on("click", function () {
 	$(this).next().slideToggle();
  });
-
-
- $(window).scroll(function (){
-	$('.fadein-top').each(function(){
-			var elemPos = $(this).offset().top,
-					scroll = $(window).scrollTop(),
-					windowHeight = $(window).height();
-				if (scroll > elemPos - windowHeight + 100){
-						$(this).addClass('scrollin');
-					}
-			});
-	});
 
  $(window).scroll(function (){
 	$('.fadein').each(function(){
 			var elemPos = $(this).offset().top,
 					scroll = $(window).scrollTop(),
 					windowHeight = $(window).height();
-				if (scroll > elemPos - windowHeight + 100){
+				if (scroll > elemPos - windowHeight + 50){
 						$(this).addClass('scrollin');
 					}
 			});
