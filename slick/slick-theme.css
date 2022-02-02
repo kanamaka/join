@@ -153,7 +153,7 @@
   line-height: 20px;
 
   position: absolute;
-  top: 0;
+  top: -22px;
   left: 0;
 
   width: 20px;
@@ -170,5 +170,5 @@
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  color: black;
+  color: rgb(11, 136, 219);
 }

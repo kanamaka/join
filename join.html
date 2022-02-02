@@ -11,64 +11,58 @@
   <link rel="stylesheet" href="css/join.css">
   <title>Casteria</title>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light col-lg-12 col-sm-6 col-lg-8 col-xs-6 col-md-2"
-    style="background-color: lightgrey;">
-    <div>
-      <h1>Casteria</h1>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mt-2">
-        <li>
-          <h5 class="nav-link" style="color: black;">Home</h5>
-        </li>
-        <li>
-          <h5 class="nav-link">Food</h5>
-        </li>
-        <li>
-          <h5 class="nav-link">Drink</h5>
-        </li>
-        <li>
-          <h5 class="nav-link">お問合わせ</h5>
-        </li>
-        <li>
-          <form class="navbar-form">
-            <div class="input-group ">
-              <input class="form-control form-control-lg" type="text" placeholder="Search">
-              <div class="input-group-btn">
-                <button type="submit" class="btn btn-default  w-100px px-0 mt-1">
-                  <h5>Search</h5>
-                </button>
-              </div>
-            </div>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-light overflow-hidden " style="background-color: lightgrey;">
+  <div>
+    <h1>Casteria</h1>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mt-2">
+      <li>
+        <h5 class="nav-link bar" style="color: black;">Home</h5>
+      </li>
+      <li>
+        <h5 class="nav-link bar">Food</h5>
+      </li>
+      <li>
+        <h5 class="nav-link bar">Drink</h5>
+      </li>
+      <li>
+        <h5 class="nav-link bar">お問合わせ</h5>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-default" style="color: black; background-color: rgb(241, 241, 241);" type="submit">
+        <h5>Search</h5>
+      </button>
+    </form>
+  </div>
+</nav>
 <div>
-  <div class="slider">
-    <div><img src="img/food.jpg" class="img-fluid img-responsive"></div>
-    <div><img src="img/food2.jpg" class="img-fluid img-responsive"></div>
-    <div><img src="img/food3.jpg" class="img-fluid img-responsive"></div>
-    <div><img src="img/food4.jpg" class="img-fluid img-responsive"></div>
+  <div class="slider overflow-hidden">
+    <div><img src="img/restaurant.jpg" class="img-fluid"></div>
+    <div><img src="img/food.jpg" class="img-fluid"></div>
+    <div><img src="img/food2.jpg" class="img-fluid"></div>
+    <div><img src="img/interior.jpg" class="img-fluid"></div>
+  </div>
+  <div class="slider-progress">
+    <div class="progress "></div>
   </div>
 </div>
 
-<body style="background-color:#FFEFB5;">
-  <div class="container-fluid">
+<body style="background-color:#fcefd0;">
+  <div>
     <div class="row">
-      <div class="col-lg-12 col-sm-6 col-lg-8">
-        <h2 class="main text-center">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
+      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12 pl-3 pr-0">
+        <h2 class="main text-lg-center">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
       </div>
-      <div class="col-lg-12 col-sm-6 col-lg-8">
-        <div class="accordion w-75 mx-auto">
-          <h2 class="menu js-menu " style="background-color:#FFC7AF;">■衛生面に関して</h2>
+      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12">
+        <div class="accordion mx-auto lh-lg">
+          <div class="menu js-menu w-75 h3 overflow-hidden mx-auto" style="background-color:#FFC7AF;">■衛生面に関して</div>
           <div class="collapse">
             <p>・マスクを着用しての接客</p>
             <p>・出勤前の検温の実施</p>
@@ -77,7 +71,7 @@
             <p>・テーブルにお客様用の消毒用アルコールの設置</p>
             <p>・従業員間の距離確保のため、休憩や研修時の客席利用</p>
           </div>
-          <h2 class="menu js-menu" style="background-color:#FFC7AF;">■お客様へ協力のお願い</h2>
+          <div class="menu js-menu w-75 h3 overflow-hidden mx-auto" style="background-color:#FFC7AF;">■お客様へ協力のお願い</div>
           <div class="collapse">
             <p>・店内では、飲食時以外のマスクの着用をお願いいたします</p>
             <p>・入店時の手指の消毒にご協力ください</p>
@@ -85,8 +79,8 @@
             <p>・多数でお越しの際はお一人様がまとめてご注文願います</p>
             <p>・発熱や体調不良の際はご入店をお控えください</p>
           </div>
-          <h2 class="menu js-menu" style="background-color:#FFC7AF;">■サービスに関して</h2>
-          <div class="collapse">
+          <div class="menu js-menu w-75 h3 overflow-hidden mx-auto" style="background-color:#FFC7AF;">■サービスに関して</div>
+          <div class="collapse mb-5">
             <p>・直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
             <p>・ドリンクやフードのサンプリング中止</p>
             <p>・地域活動、イベントの中止</p>
@@ -94,74 +88,74 @@
             <p>・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
             <p>・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
           </div>
-          <div class="fadein container">
-            <div row>
-              <div>
-                <h3 class="mt-5">Signature Food</h3>
-              </div>
-              <div class="col"><img src="img/food.jpg" class="img-responsive img-container my-5"></div>
-              <div class="restaurants col d-flex align-items-center">
-                <p class="mb-0">サーモンは刺身やカルパッチョで食べるのが美味しいですが、<br>
-                  リッチな気分になれるサーモンステーキがおすすめです。サーモンのおいしさを引き立てる2種のソースも絶品です！
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="fadein">
-            <div>
-              <h3>Our coffee</h3>
-            </div>
-            <div><img src="img/barista.jpg" class="img-responsive img-container"></div>
-            <div>当店のコーヒー豆が厳選して世界中から買い付けています。そしてそのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています
-            </div>
-          </div>
-          <div class="fadein">
-            <div>
-              <h3>Our Food</h3>
-            </div>
-            <div><img src="img/food3.jpg" class="img-responsive img-container"></div>
-            <div>当店は何より衛生管理に気を付けています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。
-            </div>
-          </div>
-          <div class="fadein card img-responsive" style="background-color: black;">
-            <img src="img/barista.jpg" class="card-img-top img-responsive">
-            <p class="card-text">
-            <h2 style="color: white;">Address</h2>
-            <p style="color: white;">681 xxxx Drive, xxxxx xxxx #01 - 06 000000</p>
-            <p style="color: white;">Opening House</p>
-            <h2 style="color: white;">Mondays - Friday: 10am - 9pm</h2>
-            <p style="color: white;">saturdays, sundays & Public Holidays: 9am- 9pm</p>
-            </p>
-          </div>
+        </div>
+      </div>
+      <div class="fadein overflow-hidden container">
+        <div class="row col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12">
+          <h2 class="w-100 mt-5 mb-4 ml-4">Signature Food</h2>
           <div>
-            <h4 class="text-center">店舗一覧</h4>
-            <ul class="restaurant d-none d-md-block">
-              <li class="restaurant"><img src="img/restaurant.jpg" class="rounded-circle" width="150" height="150"></li>
-              <li class="restaurant"><img src="img/restaurant2.jpg" class="rounded-circle" width="150" height="150">
-              </li>
-              <li class="restaurant"><img src="img/restaurant3.jpg" class="rounded-circle" width="150" height="150">
-              </li>
-              <li class="restaurant"><img src="img/restaurant4.jpg" class="rounded-circle" width="150" height="150">
-              </li>
-              <li class="restaurant"><img src="img/restaurant5.jpg" class="rounded-circle" width="150" height="150">
-              </li>
-            </ul>
+            <img src="img/food.jpg" class="img-fluid  mr-3" style="width: 500px; height: auto;">
+          </div>
+          <div class="mt-3 col-xl-5 col-md-4 col-sm-12 col-xs-12 col-lg-12 align-items-center">
+            <p>サーモンは刺身やカルパッチョで食べるのが美味しいですが
+              リッチな気分になれるサーモンステーキがおすすめです。サーモンのおいしさを引き立てる2種のソースも絶品です！</p>
+          </div>
+        </div>
+      </div>
+      <div class="fadein overflow-hidden container">
+        <div class="row col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12">
+          <h2 class="w-100 mt-5 mb-4 ml-4">Our Coffee</h2>
+          <div>
+            <img src="img/barista.jpg" class="img-fluid mr-3" style="width: 500px; height: auto;">
+          </div>
+          <div class="mt-3 col-xl-5 col-md-12 col-sm-12 col-xs-12 col-lg-12  align-items-center">
+            <p>当店のコーヒー豆が厳選して世界中から買い付けています。そしてそのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています</p>
+          </div>
+        </div>
+      </div>
+      <div class="fadein overflow-hidden container ">
+        <div class="row col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12">
+          <h2 class="w-100 mt-5 mb-4 ml-4">Our Food</h2>
+          <div>
+            <img src="img/food3.jpg" class="img-fluid mr-3" style="width: 500px; height: auto;">
+          </div>
+          <div class="mt-3 col-xl-5 col-md-12 col-sm-12 col-xs-12 col-lg-12 align-items-center">
+            <p>当店は何より衛生管理に気を付けています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="card mb-3 mt-5 overflow-hidden fadein " style="max-width: 1200px; height: auto; background-color: black;">
     <div class="row">
-      <div class="col">
-        <img class="my-5 w-100" src="img/restaurant.jpg">
+      <div class="col-lg-6">
+        <div class="card-body p-0">
+          <p class="card-title pl-3 mt-2 h4" style="color: white;"><span>Address</span></p>
+          <p class="card-text mt-4" style="color: white;">681 xxxx Drive, xxxxx xxxx #01 - 06 000000</p>
+          <p class="card-text mt-4" style="color: white;">Opening House</p>
+          <p class="card-title pl-3 mt-4 h4" style="color: white;">Mondays - Friday: 10am - 9pm</p>
+          <p class="card-text mt-4" style="color: white;">saturdays, sundays & Public Holidays: 9am- 9pm</p>
+        </div>
       </div>
-      <div class="col d-flex align-items-center">
-        <p class="mb-0">画像の中央あたりに横に並べたいです</p>
-        　
+      <div class="col-lg-6">
+        <img src="img/barista.jpg" class="card-img">
       </div>
-      　
     </div>
+  </div>
+  <div>
+    <h4 class="text-center m-4">店舗一覧</h4>
+    <ul class="restaurant d-none d-md-block" style="text-align: center; ">
+      <li class="restaurant m-3"><img src="img/restaurant.jpg" class="rounded-circle" width="150" height="150">
+      </li>
+      <li class="restaurant m-3"><img src="img/restaurant2.jpg" class="rounded-circle" width="150" height="150">
+      </li>
+      <li class="restaurant m-3"><img src="img/restaurant3.jpg" class="rounded-circle" width="150" height="150">
+      </li>
+      <li class="restaurant m-3"><img src="img/restaurant4.jpg" class="rounded-circle" width="150" height="150">
+      </li>
+      <li class="restaurant m-3"><img src="img/restaurant5.jpg" class="rounded-circle" width="150" height="150">
+      </li>
+    </ul>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -174,11 +168,11 @@
   <script src="/slick/slick.min.js"></script>
   <script src="js/join.js"></script>
 </body>
-<footer style="background-color: darkgray;" class="p-5">
-  <div class="container-fluid text-center ">
-    <span class="m-2">プライバシーポリシー</span>
-    <span class="m-2">お問い合わせ</span>
-    <span class="m-2">運営会社</span>
+<footer style="background-color: darkgray; height: 130px;">
+  <div class="container text-center pt-4">
+    <li class="mr-1" style="list-style: none; display: inline;">プライバシーポリシー</li>
+    <li style="list-style: none; display: inline;">お問い合わせ</li>
+    <li class="ml-1" style="list-style: none; display: inline;">運営会社</li>
   </div>
 </footer>
 
