@@ -1,47 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+.slick-next {
+  right: -70px;
+}
+.slick-prev {
+  left: -70px;
 }
 
 @media (max-width: 768px) {
-  ul {
-    text-align: right;
-  }
-
-  li {
-    display: inline;
-  }
-  .img-fluid {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-  .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: rgb(11, 136, 219);
-  }
-  .menu {
-    line-height: 50px;
-    margin: 5px;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-  .slick-prev {
-    left: 0;
-  }
-  .slick-arrow {
-    width: initial;
-    height: initial;
-    z-index: 2;
-  }
-  .slick-arrow:before {
-    font-size: 30px;
-    color: #00bfff;
-  }
-
   .fadein {
     opacity: 0;
     transform: translate(0, 20px);
@@ -53,65 +22,30 @@
     transform: translate(0, 0);
   }
 
-  .img-container {
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 200px;
+  .slider {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .restaurant {
-    text-align: center;
+  .slick-next {
+    right: -70px;
   }
-
-  .card {
-    display: flex;
-    flex-direction: column;
+  .slick-prev {
+    left: -70px;
   }
 }
 
 @media (min-width: 769px) {
-  ul {
-    text-align: right;
-  }
-
-  li {
-    display: inline;
-  }
-  .img-fluid {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-  .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: rgb(11, 136, 219);
-  }
-  .menu {
-    line-height: 50px;
-    margin: 5px;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-  .slick-prev {
-    left: 0;
-  }
-  .slick-arrow {
-    width: initial;
-    height: initial;
-    z-index: 2;
-  }
-  .slick-arrow:before {
-    font-size: 30px;
-    color: #00bfff;
-  }
-
   .fadein {
     opacity: 0;
     transform: translate(0, 20px);
     transition: all 1000ms;
+  }
+
+  .food {
+    width: 500px;
+    vertical-align: top;
   }
 
   .fadein.scrollin {
@@ -119,23 +53,10 @@
     transform: translate(0, 0);
   }
 
-  .img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 300px;
+  .slick-next {
+    right: -50px;
   }
-
-  .restaurants {
-    display: inline-block;
-  }
-
-  .restaurant {
-    text-align: center;
-  }
-
-  .card {
-    flex-direction: row-reverse;
+  .slick-prev {
+    left: -50px;
   }
 }

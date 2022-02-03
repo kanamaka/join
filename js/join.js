@@ -6,10 +6,7 @@ $(document).ready(function () {
   $(".slider").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplaySpeed: 6000,
     dots: true,
-    arrows: true,
-    infinite: true,
     responsive: [
       {
         breakpoint: 768,
@@ -31,7 +28,7 @@ $(document).ready(function () {
 
   function interval() {
     if (isPause === false) {
-      percentTime += 1 / (time + 0.1);
+      percentTime += 1 / (time + 9);
       $bar.css({
         width: percentTime + "%",
       });
@@ -48,7 +45,6 @@ $(document).ready(function () {
     });
     clearTimeout(tick);
   }
-
   startProgressbar();
 });
 
