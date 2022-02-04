@@ -2,15 +2,14 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="/slick/slick.css">
-  <link rel="stylesheet" href="/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/join.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <title>Casteria</title>
+  <title>test</title>
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color: lightgrey; overflow: hidden;">
@@ -52,25 +51,32 @@
 </header>
 
 <body style="background-color:#fcefd0; ">
-  <div class="container-fluid p-xl-0">
-    <div class="slider">
-      <div><img src="img/restaurant.jpg" style="object-fit: cover; width: 100%; height: 50vh;"></div>
-      <div><img src="img/food.jpg" style="object-fit: cover; width: 100%; height: 50vh;"></div>
-      <div><img src="img/food2.jpg" style="object-fit: cover; width: 100%; height: 50vh;"></div>
-      <div><img src="img/interior.jpg" style="object-fit: cover; width: 100%; height: 50vh;"></div>
+  <div class="swiper-parent">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/restaurant.jpg" class="img-fluid"
+            style="object-fit: cover; width: 100%; height: 50vh;">
+        </div>
+        <div class="swiper-slide"><img src="img/food.jpg" class="img-fluid"
+            style="object-fit: cover; width: 100%; height: 50vh;"></div>
+        <div class="swiper-slide"><img src="img/food2.jpg" class="img-fluid"
+            style="object-fit: cover; width: 100%; height: 50vh;"></div>
+        <div class="swiper-slide"><img src="img/interior.jpg" class="img-fluid"
+            style="object-fit: cover; width: 100%; height: 50vh;">
+        </div>
+      </div>
+      <div class="swiper-pagination m-md-4 mx-md-auto"></div>
+      <div class="swiper-scrollbar m-md-4"></div>
     </div>
-  </div>
-  <div class="mt-n5">
-    <div class="slider-progress">
-      <div class="progress "></div>
-    </div>
+    <div class="swiper-button-prev" style="width: 0%;"></div>
+    <div class="swiper-button-next"></div>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="w-100">
         <h2 class="text-center pt-4 ">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
       </div>
-      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-xl-12 ">
+      <div class="col-md-12">
         <div class="accordion mx-auto w-75">
           <div class="js-menu h5 p-2 font-weight-bold" style="background-color:#FFC7AF; line-height: 40px;">
             ■衛生面に関して
@@ -110,7 +116,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="fadein container">
-          <div class="col-12 ml-md-3">
+          <div class="ml-md-3">
             <h2 class="w-100 mt-5 mb-4 ml-3">Signature Food</h2>
             <div>
               <img src="img/food.jpg" class="img-fluid" style="width: 500px; height: auto;">
@@ -118,7 +124,7 @@
                 リッチな気分になれるサーモンステーキがおすすめです。サーモンのおいしさを引き立てる2種のソースも絶品です！</p>
             </div>
           </div>
-          <div class="col-12 ml-md-4">
+          <div class="ml-md-3">
             <h2 class="w-100 mt-5 mb-4 ml-3">Our Coffee</h2>
             <div>
               <img src="img/barista.jpg" class="img-fluid" style="width: 500px; height: auto;">
@@ -126,7 +132,7 @@
                 当店のコーヒー豆は厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています</p>
             </div>
           </div>
-          <div class="col-12 ml-md-4">
+          <div class="ml-md-3">
             <h2 class="w-100 mt-5 mb-4 ml-3">Our Food</h2>
             <div>
               <img src="img/food3.jpg" class="img-fluid" style="width: 500px; height: auto;">
@@ -189,11 +195,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/slick/slick.min.js"></script>
   <script src="js/join.js"></script>
 </body>
 <footer style="background-color: darkgray; height: 150px;">

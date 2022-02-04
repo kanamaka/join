@@ -1,51 +1,34 @@
-$(document).ready(function () {
-  var time = 2;
-  var $bar, $slick, isPause, tick, percentTime;
+var Swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
 
-  $slick = $(".slider");
-  $(".slider").slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  },
 
-  $bar = $(".slider-progress .progress");
-  function startProgressbar() {
-    resetProgressbar();
-    percentTime = 0;
-    isPause = false;
-    tick = setInterval(interval, 10);
-  }
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    reverseDirection: false,
+  },
 
-  function interval() {
-    if (isPause === false) {
-      percentTime += 1 / (time + 9);
-      $bar.css({
-        width: percentTime + "%",
-      });
-      if (percentTime >= 100) {
-        $slick.slick("slickNext");
-        startProgressbar();
-      }
-    }
-  }
-
-  function resetProgressbar() {
-    $bar.css({
-      width: 0 + "%",
-    });
-    clearTimeout(tick);
-  }
-  startProgressbar();
+  loop: true,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
 });
 
 $(".js-menu").on("click", function () {
